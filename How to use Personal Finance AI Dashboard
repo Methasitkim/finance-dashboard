@@ -1,0 +1,47 @@
+💰 Personal Finance AI Dashboard
+Dashboard วิเคราะห์การใช้จ่ายส่วนตัวพร้อม AI Advisor
+✨ Features
+
+อัปโหลด bank statement (CSV) แล้ววิเคราะห์อัตโนมัติ
+แสดงกราฟ Pie Chart และ Bar Chart แยกตามหมวด
+Timeline การใช้จ่ายรายวัน
+AI วิเคราะห์และแนะนำวิธีลดค่าใช้จ่าย
+มีข้อมูลตัวอย่างให้ทดลองใช้ได้เลย
+
+🛠️ Tech Stack
+
+Python 3.x
+Streamlit — Web UI
+Pandas — Data Processing
+Plotly — Interactive Charts
+Google Gemini API — AI Advisor
+
+🚀 วิธีใช้งาน
+1. ติดตั้ง dependencies
+bashpip install streamlit pandas plotly google-generativeai
+2. ตั้งค่า API Key
+bashset GEMINI_API_KEY=your_api_key_here
+3. รัน
+bashstreamlit run app.py
+เปิด browser ที่ http://localhost:8501
+4. ทดลองใช้
+กด "ใช้ข้อมูลตัวอย่าง" ที่ sidebar หรืออัปโหลด CSV ของคุณเอง
+📊 CSV Format ที่รองรับ
+csvdate,amount,category,description
+2024-01-01,250,อาหาร,ข้าวเที่ยง
+2024-01-02,1200,ช้อปปิ้ง,เสื้อผ้า
+2024-01-03,800,ค่าเดินทาง,แกร็บ
+📸 Screenshots
+Dashboard OverviewAI AdvisorMetrics + Chartsคำแนะนำการใช้จ่าย
+📁 โครงสร้างโปรเจกต์
+finance-dashboard/
+├── app.py           # Streamlit app
+├── sample.csv       # ข้อมูลตัวอย่าง
+└── .gitignore
+💡 สิ่งที่เรียนรู้
+
+Streamlit Web UI framework
+Pandas data pipeline และ aggregation
+Plotly interactive visualizations
+LLM Structured Output สำหรับ analysis
+การออกแบบ data-driven application
